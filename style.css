@@ -560,3 +560,90 @@ h3 {
         min-height: auto;
     }
 }
+
+/* ---------- Topic page ---------- */
+
+.topic-content-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.topic-info-card {
+    padding: 30px;
+    border: 1px solid #dbeafe;
+    border-radius: var(--radius);
+    background: var(--white);
+    box-shadow: 0 5px 18px rgba(15, 23, 42, 0.04);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.topic-info-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow);
+}
+
+.topic-info-card h3 {
+    margin-bottom: 14px;
+    color: var(--primary);
+}
+
+.topic-info-card p {
+    margin: 0;
+    color: var(--muted);
+}
+
+.research-areas-section {
+    background: #f8fbff;
+}
+
+.research-areas-section .focus-card {
+    background: var(--white);
+}
+
+/* ---------- Topic page responsive layout ---------- */
+
+@media (max-width: 760px) {
+    .topic-content-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* ---------- Opportunities page ---------- */
+
+.question-card {
+    padding: 28px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--white);
+    box-shadow: 0 5px 18px rgba(15, 23, 42, 0.04);
+}
+
+.question-card h3 {
+    margin-bottom: 12px;
+    color: var(--primary);
+}
+
+.question-card p {
+    margin-bottom: 0;
+    color: var(--muted);
+}
+
+.aim-card {
+    padding: 30px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--white);
+    box-shadow: var(--shadow);
+}
+
+.aim-card h3 {
+    margin-bottom: 14px;
+    color: var(--primary);
+}
+
+.aim-card p {
+    margin-bottom: 20px;
+    color: var(--muted);
+}
